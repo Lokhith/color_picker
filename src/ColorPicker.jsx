@@ -11,9 +11,9 @@ function ColorPicker() {
   return (
     <div className="color-picker-container">
       <div className="header-block">
-        <h1>🎨 Color Picker</h1>
-        <p className="sub-heading">Choose a color to see it live!</p>
-      </div>
+      <h1 className="gradient-text">Color Picker</h1>
+      <p className="sub-heading">Pick your perfect shade with style ✨</p>
+    </div>
 
       <div className="color-display" style={{ backgroundColor: color }}>
         <p>Selected Color: {color}</p>

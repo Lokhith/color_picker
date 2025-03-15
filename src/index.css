@@ -28,7 +28,7 @@ body {
   align-items: center;
   border: 5px solid hsl(0, 0%, 80%);
   border-radius: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -70,47 +70,55 @@ input[type="color"]:focus {
   outline: none;
 }
 
-/* Header Block Styling */
 .header-block {
-  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
-  padding: 30px 40px;
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.7);
+  border: 2px solid rgba(200, 200, 200, 0.5);
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 10px 60px;
+  margin-bottom: 30px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin-bottom: 40px;
-  max-width: 600px;
+  transition: all 0.3s ease;
+  max-width: 700px;
   width: 90%;
-  transition: transform 0.3s ease;
 }
 
 .header-block:hover {
-  transform: scale(1.01);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
-.header-block h1 {
-  font-size: 3rem;
-  color: #00796b;
+/* Gradient Text Effect */
+.gradient-text {
+  font-size: 4rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 0;
 }
 
+/* Subheading below main title */
 .sub-heading {
-  font-size: 1.25rem;
-  color: #004d40;
-  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #444;
+  margin-top: 15px;
   font-weight: 500;
+  opacity: 0.85;
 }
 
-/* Optional: Responsive Design */
+/* Responsive Tweaks */
 @media (max-width: 600px) {
   .header-block {
-    padding: 20px;
+    padding: 25px 20px;
   }
 
-  .header-block h1 {
-    font-size: 2.2rem;
+  .gradient-text {
+    font-size: 2.5rem;
   }
 
   .sub-heading {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
